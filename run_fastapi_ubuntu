@@ -1,0 +1,13 @@
+sudo apt update -y && sudo apt upgrade -y 
+sudo apt-get install -y -q python3 python3-pip python3-venv nginx openssl
+sudo apt install docker-compose docker.io install -y
+sudo systemctl start docker
+
+git clone https://KaratayBerkay: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@github.com/serimgencaslan/QRProject.git && cd QRProject
+
+python3 -m venv venv
+source venv/bin/activate
+pip install pip --upgrade
+sudo pip install -r requirements.txt --no-cache-dir
+
+echo "Hi. I have uploaded the python lib @Fastapi. :) Enjoy..."
